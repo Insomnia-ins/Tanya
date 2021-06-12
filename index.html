@@ -1,0 +1,84 @@
+<div style="background-color: white;height: 800px; width: auto;">
+<div style="background: lightblue; width: 800px; height: 400px;margin-left: 500px; font-size: 120;">
+	<div  style=" width: 300px; height: 80px;margin-left: 250px; font-size: 80;"></div>
+		<div class="start" style="background: orangered; width: 300px; height: 80px;margin-left: 250px; font-size: 80;">start</div>
+</div>
+<div class="question1" style="background: white; width: 500px; height: 700px; margin-left: 700px;display: none;">
+	<img src="13.png" style="width:500px;">
+	<h1> кто изображен на картинке </h1>
+	<div class="var1" style="background: lightblue; width: 500px; height: 100px; font-size: 40">крош</div>
+		<div class="var2" style="background: orangered; width: 500px; height: 100px;font-size: 40">пин</div>
+			<div class="var3"style="background: greenyellow; width: 500px; height: 100px;font-size: 40">копатыч</div>
+</div>
+<div class="question2" style="background: white; width: 500px; height: 700px; margin-left: 700px; display: none;">
+	<img src="14.png" style="width:500px">
+	<h1> кто изображен на картинке </h1>
+	<div class="var1" style="background: palevioletred; width: 500px; height: 100px;font-size: 40">дора</div>
+	<div class="var2" style="background: lightslategrey; width: 500px; height: 100px;font-size: 40">совунья</div>
+	<div class="var3" style="background: mediumblue; width: 500px; height: 100px;font-size: 40">нюша</div>
+</div>
+<div class="question3" style="background: white; width: 500px; height: 800px; margin-left: 700px;display: none">
+	<img src="15.png" style="width: 500px">
+	<h1> кто изображен на картинке </h1>
+	<div class="var1" style="background: indianred; width: 500px; height: 100px;font-size: 40">хрум</div>
+	<div class="var2" style="background: gainsboro; width: 500px; height: 100px;font-size: 40">огонек</div>
+	<div class="var3" style="background: lightpink; width: 500px; height: 100px;font-size: 40">драко</div>
+</div>
+<div class="question4" style="background: white; width: 500px; height: 700px; margin-left: 700px; display: none">
+	<iframe width="500" height="315" src="https://www.youtube.com/embed/AlR0fQsm83Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1> дата премьеры </h1>
+	<div class="var1" style="background: lightgoldenrodyellow; width: 500px; height: 100px;font-size: 40">12 октября 2012г.</div>
+	<div class="var2" style="background: yellowgreen; width: 500px; height: 100px;font-size: 40">2 января 2010г.</div>
+	<div class="var3" style="background: lightyellow; width: 500px; height: 100px;font-size: 40">22 декабря 2011г.</div>
+</div>
+<div class="question5" style="background: white; width: 500px; height: 700px; margin-left: 700px; display: none">
+	<img src="17.png" style="width: 500px">
+	<h1> кто изображен на картинке </h1>
+	<div class="var1" style="background: palevioletred; width: 500px; height: 100px;font-size: 40">дизель и лара</div>
+	<div class="var2" style="background: blueviolet; width: 500px; height: 100px;font-size: 40">шустряк и лада</div>
+	<div class="var3" style="background: indianred; width: 500px; height: 100px;font-size: 40">бума и киша</div>
+</div>
+<div class="question6" style="background: white; width: 500px; height: 1000px; margin-left: 700px; display: none">
+	<h1> какая песня звучала в серии про вестибулярный аппарат </h1>
+	<div class="var1" style="background: mediumvioletred; width: 500px; height: 200px;"><iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/59508291/14299860"></iframe></div>
+	<div class="var2" style="background: dimgrey; width: 500px; height: 200px;"><iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/59508295/14299860"></iframe></div>
+	<div class="var3" style="background: springgreen; width: 500px; height: 200px;"><iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/59508285/14299860"></iframe></div>
+</div>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+	find("start").click("show", "question1")
+</script>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question1 var1").click("show", "question2", "правильно");
+    find("question1 var2").click("alert", "неправильно");
+    find("question1 var3").click("alert", "неправильно");
+</script>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question2 var1").click("alert","неправильно");
+    find("question2 var2").click("show", "question3", "правильно");
+    find("question2 var3").click("alert", "неправильно");
+</script>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question3 var1").click("show", "question4", "правильно");
+    find("question3 var2").click("alert", "неправильно");
+    find("question3 var3").click("alert", "неправильно");
+</script><script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question4 var1").click("alert", "неправильно");
+    find("question4 var2").click("alert", "неправильно");
+    find("question4 var3").click("show", "question5", "правильно");
+</script>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question5 var1").click("show", "question6", "правильно");
+    find("question5 var2").click("alert", "неправильно");
+    find("question5 var3").click("alert", "неправильно");
+</script><script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question6 var1").click("alert","правильно");
+    find("question6 var2").click("alert", "неправильно");
+    find("question6 var3").click("alert", "неправильно");
+</script>
